@@ -54,9 +54,32 @@
         /* Contact */
         form{display:grid;gap:12px;max-width:720px}
         label{font-size:14px;color:var(--muted)}
-        input,textarea{width:100%;padding:12px 12px;border-radius:12px;border:1px solid #263049;background:#0f1118;color:var(--text)}
+        /* replace your old 'input, textarea' rule with this */
+        input:not([type="checkbox"]):not([type="radio"]), textarea {
+            width: 100%;
+            padding: 12px 12px;
+            border-radius: 12px;
+            border: 1px solid #263049;
+            background: #0f1118;
+            color: var(--text);
+        }
         textarea{min-height:120px;resize:vertical}
-        .gdpr{display:flex;gap:8px;align-items:flex-start;color:var(--muted);font-size:13px}
+        .gdpr {
+            display: grid;
+            grid-template-columns: auto 1fr;  /* checkbox | text */
+            align-items: start;
+            column-gap: 8px;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        /* make sure the checkbox isn’t stretched */
+        .gdpr input[type="checkbox"] {
+            width: auto;
+            height: auto;
+            margin-top: 3px;   /* nudge to align with first line */
+        }
         .form-note{font-size:12px;color:var(--muted)}
 
         /* Footer */
@@ -175,12 +198,17 @@
             </div>
             <label class="gdpr">
                 <input type="checkbox" required />
-                <span>Ich habe die <a href="#datenschutz">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zum Zweck der Kontaktaufnahme zu.</span>
+                <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Angaben zum Zweck der Kontaktaufnahme zu.</span>
             </label>
             <button class="btn primary" type="submit">Anfrage senden</button>
             <div class="tiny muted form-note">Mit dem Absenden stimmen Sie der Verarbeitung durch Formspree zu.</div>
             <div id="formStatus" class="tiny" aria-live="polite" style="margin-top:6px"></div>
         </form>
+        <div class="cta" style="margin-top:20px">
+            <a class="btn" href="tel:+49XXXXXXXXXX">
+                📞 Anrufen
+            </a>
+        </div>
     </section>
 
     <section>
