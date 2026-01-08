@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vielen Dank – Sanierung & Renovierung Berlin</title>
+    <meta name="description" content="Vielen Dank für Ihre Anfrage. Wir melden uns in Kürze bei Ihnen." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        :root{
+            --bg:#0b0c10; --card:#111217; --muted:#9aa2b1; --brand:#3aa8ff; --brand-2:#65d28a; --text:#e8ecf3; --accent:#1b1e27;
+        }
+        *{box-sizing:border-box}
+        html,body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#0b0c10 0%,#0e1117 100%);min-height:100vh;}
+        a{color:var(--brand);text-decoration:none}
+        header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(11,12,16,.6);border-bottom:1px solid #1e2230;z-index:50}
+        .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+        .row{display:flex;align-items:center;justify-content:space-between}
+        .logo{display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:.2px}
+        .logo-badge{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;font-weight:800;color:#081018}
+        .nav a{margin-left:18px;color:var(--muted)}
+
+        .thank-you{padding:80px 0;text-align:center;min-height:calc(100vh - 200px);display:flex;flex-direction:column;justify-content:center;align-items:center}
+        .thank-you-icon{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;font-size:40px;margin:0 auto 24px;animation:scaleIn 0.5s ease-out}
+        @keyframes scaleIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+        .thank-you h1{font-size:36px;line-height:1.2;margin:0 0 16px;animation:fadeInUp 0.6s ease-out 0.2s both}
+        .thank-you p{color:var(--muted);font-size:18px;max-width:600px;margin:0 auto 32px;animation:fadeInUp 0.6s ease-out 0.3s both}
+        @keyframes fadeInUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+        .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:12px;border:1px solid #263049;background:#121521;font-weight:600;transition:all 0.2s}
+        .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#091017;border-color:transparent}
+        .btn.whatsapp{background:#25D366;color:#081018;border-color:transparent}
+        .btn.whatsapp:hover{filter:brightness(1.1)}
+        .btn:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(58,168,255,0.3)}
+        .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;animation:fadeInUp 0.6s ease-out 0.4s both}
+
+        .info-card{background:var(--card);border:1px solid #202637;border-radius:16px;padding:24px;max-width:500px;margin:40px auto 0;text-align:left;animation:fadeInUp 0.6s ease-out 0.5s both}
+        .info-card h3{margin:0 0 12px;font-size:18px}
+        .info-card ul{margin:0;padding-left:20px;line-height:1.8;color:var(--muted)}
+
+        footer{padding:28px 0 60px;color:#aab3c4;margin-top:auto}
+        .foot{display:flex;gap:18px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+        .tiny{font-size:12px}
+    </style>
+</head>
+<body>
+<header>
+    <div class="wrap row" style="height:64px">
+        <div class="logo">
+            <div class="logo-badge">AR4</div>
+            <div><a href="index.html" style="color:var(--muted)">Sanierung Renovierung Berlin</a></div>
+        </div>
+        <nav class="nav">
+            <a href="index.html#leistungen">Leistungen</a>
+            <a href="index.html#galerie">Ergebnisse</a>
+            <a href="index.html#ablauf">Ablauf</a>
+            <a href="index.html#kontakt">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<main class="wrap">
+    <section class="thank-you">
+        <div class="thank-you-icon">✓</div>
+        <h1>Vielen Dank für Ihre Anfrage!</h1>
+        <p>Wir haben Ihre Nachricht erhalten und werden uns in Kürze bei Ihnen melden. In der Regel antworten wir innerhalb von 24 Stunden.</p>
+        
+        <div class="cta">
+            <a class="btn primary" href="index.html">Zurück zur Startseite</a>
+            <a class="btn" href="tel:+4915781274938">📞 Direkt anrufen</a>
+            <a class="btn whatsapp"
+               href="https://wa.me/4915781274938?text=Hallo%2C%20ich%20habe%20eine%20Frage%20zur%20Renovierung."
+               target="_blank" rel="noopener noreferrer">
+                💬 WhatsApp
+            </a>
+        </div>
+
+        <div class="info-card">
+            <h3>Was passiert als Nächstes?</h3>
+            <ul>
+                <li>Wir prüfen Ihre Anfrage und melden uns zeitnah</li>
+                <li>Bei Bedarf vereinbaren wir einen Besichtigungstermin</li>
+                <li>Sie erhalten ein transparentes, unverbindliches Angebot</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="wrap foot">
+        <div class="logo"><div class="logo-badge">AR4</div><div><a href="index.html" style="color:var(--muted)">Sanierung Renovierung Berlin</a></div></div>
+        <div class="tiny">
+            <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutzerklärung</a>
+        </div>
+        <div class="tiny">© <span id="y"></span> AR4</div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
